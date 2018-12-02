@@ -19,7 +19,7 @@
 				 "ls"
      There should be statistics-data.ttl and statistics-data.txt 
 
-# 6 Download those new datasets via docker commands like "docker cp IMAGE_IDENTIFICATOR:/etl/www/statistics-data.ttl <C:\example\dir\path\in\your\pc>" (use "exit" to exit 5.2)
+# 6 Download those new datasets via docker commands like "docker cp IMAGE_IDENTIFICATOR:/etl/www/statistics-data.ttl C:\example\dir\path\in\your\pc" (use "exit" to exit 5.2)
 # 6.1 Publish datasets on DBpedia
 
 
