@@ -1,0 +1,125 @@
+.column
+{
+
+border:1px solid #767687;
+text-align:center;
+float:left;
+margin:10px;
+  
+}
+
+.column-table-select
+{
+
+border:1px solid #767687;
+text-align:center;
+margin:10px;
+  
+}
+
+h5.in-column
+{
+	margin:0px 0px 0px 0px;
+	background-color:#767687;
+	padding:10px;
+	color:white;
+	font-size:15px;
+	
+	
+	font: 15px/1.1 "Raleway", sans-serif;
+   
+}
+
+.center
+{
+	width:100%;
+	text-align:center;
+	clear:both;
+}
+
+.select-option
+{
+width: 250px;
+
+margin: 0px 10px 0px 10px;	
+	
+}
+
+
+.select-class
+{
+width:250px;
+margin:0px 10px 0px 10px;
+}
+
+
+.select-table {
+
+  counter-reset: rowNumber;
+  overflow-x:auto;
+}
+.select-table  tr {
+  counter-increment: rowNumber;
+}
+.select-table  tr td:first-child::before {
+  content: counter(rowNumber);
+}
+
+td.table-numbers {
+  padding:0px 25px 0px 25px;
+}
+
+.select-option-description
+{
+	font-size:15px;
+	font-weight:bold;
+	padding:10px;
+}
+
+
+
+.option-input-select
+
+{
+width: 250px;
+
+margin: 0px 10px 0px 10px;	
+}
+
+.button-show
+{
+margin:10px 10px 10px 10px;	
+}
+
+.select-table
+
+{
+	width:100%;
+}
+
+a.in-column-link
+{
+	color:white;
+	text-decoration:underline;
+}
+
+a.in-column-link:hover
+{
+	color:white;
+	text-decoration:none;
+}
+
+.global-stat-column
+{
+	float:left;
+	margin-right:20px;
+	margin-bottom:20px;
+}
+
+.global-stat-column th
+{
+	color:white;
+	background-color:#767687;
+	padding:5px 20px 5px 20px;
+	font: 14px/1.1 "Raleway", sans-serif;
+}

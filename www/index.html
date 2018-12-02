@@ -1,0 +1,142 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="generator" content="PSPad editor, www.pspad.com">
+<title>Statistiky &#8211; Czech DBpedia</title>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript" src="/js/sgvizler.js"></script>
+	<script type="text/javascript" src="/js/select-option.js"></script>
+	<script type="text/javascript" src="/js/sgvizler-default.js"></script>
+	<script type="text/javascript" src="/js/id-show-hide-content.js"></script>
+
+	<link rel="stylesheet" href="/css/stats.css" type="text/css">
+  </head>
+  <body>
+
+
+	
+ <!---------------TABLES OF SINGLE NUMBER STATISTICS --------------->	
+
+
+<h1>Globální statistiky</h1>
+<div class="center">
+<div id="global-stats-div-data-set">	
+	
+<div class="column">
+<h5 class="in-column"><a href="http://mappings.dbpedia.org/index.php/OntologyProperty:NumberOfResource" class="in-column-link" title="Počet zdrojů - mappings.dbpedia.org" target="_blank">Počet zdrojů</a></h5>
+<span id="numberOfResource"></span>
+</div>
+
+<div class="column">
+<h5 class="in-column"><a href="http://mappings.dbpedia.org/index.php/OntologyProperty:NumberOfUniqeResources" class="in-column-link" title="Počet unikátních zdrojů - mappings.dbpedia.org" target="_blank">Počet unikátních zdrojů</a></h5>
+<span id="numberOfUniqeResources"></span>
+</div>
+
+
+<div class="column">
+<h5 class="in-column"><a href="http://mappings.dbpedia.org/index.php/OntologyProperty:NumberOfResourceWithType" class="in-column-link" title="Počet zdrojů s definovaným typem - mappings.dbpedia.org" target="_blank">Počet zdrojů s definovaným typem</a></h5>
+<span id="numberOfResourceWithType"></span>
+</div>
+		
+		
+<div class="column">
+<h5 class="in-column"><a href="http://mappings.dbpedia.org/index.php/OntologyProperty:NumberOfClasses" class="in-column-link" title="Počet definovaných tříd - mappings.dbpedia.org" target="_blank">Definované třídy</a></h5>
+<span id="numberOfClasses"></span>
+</div>
+
+<div class="column">
+<h5 class="in-column"><a href="http://mappings.dbpedia.org/index.php/OntologyProperty:NumberOfClassesWithResource" class="in-column-link" title="Počet tříd se zdroji - mappings.dbpedia.org" target="_blank">Počet tříd se zdroji</a></h5>
+<span id="numberOfClassesWithResource"></span>
+</div>
+
+
+<div class="column">
+<h5 class="in-column"><a href="http://mappings.dbpedia.org/index.php/OntologyProperty:NumberOfDisambiguates" class="in-column-link" title="Počet rozcestníků - mappings.dbpedia.org" target="_blank">Počet rozcestníků</a></h5>
+<span id="numberOfDisambiguates"></span>
+</div>
+
+<div class="column">
+<h5 class="in-column"><a href="http://mappings.dbpedia.org/index.php/OntologyProperty:NumberOfOutdegree" class="in-column-link" title="Počet interních odkazů - mappings.dbpedia.org" target="_blank">Počet interních odkazů</a></h5>
+<span id="numberOfOutdegree"></span>
+</div>
+
+<div class="column">
+<h5 class="in-column"><a href="http://mappings.dbpedia.org/index.php/OntologyProperty:NumberOfProperties" class="in-column-link" title="Počet definovaných propert - mappings.dbpedia.org" target="_blank">Počet definovaných propert</a></h5>
+<span id="numberOfProperties"></span>
+</div>
+
+<div class="column">
+<h5 class="in-column"><a href="http://mappings.dbpedia.org/index.php/OntologyProperty:NumberOfPropertiesUsed" class="in-column-link" title="Počet používaných propert - mappings.dbpedia.org" target="_blank">Počet používaných propert</a></h5>
+<span id="numberOfPropertiesUsed"></span>
+</div>
+
+<div class="column">
+<h5 class="in-column"><a href="http://mappings.dbpedia.org/index.php/OntologyProperty:NumberOfPredicates" class="in-column-link" title="Počet predikátů - mappings.dbpedia.org" target="_blank">Počet predikátů</a></h5>
+<span id="numberOfPredicates"></span>
+</div>
+
+<div class="column">
+<h5 class="in-column"><a href="http://mappings.dbpedia.org/index.php/OntologyProperty:NumberOfRedirectedResource" class="in-column-link" title="Počet redirectů - mappings.dbpedia.org" target="_blank">Počet redirectů</a></h5>
+<span id="numberOfRedirectedResource"></span>
+</div>
+
+<div class="column">
+<h5 class="in-column"><a href="http://mappings.dbpedia.org/index.php/OntologyProperty:NumberOfTriples" class="in-column-link" title="Počet trojic - mappings.dbpedia.org" target="_blank">Počet trojic</a></h5>
+<span id="numberOfTriples"></span>
+</div>
+<!---------------END OF TABLES OF SINGLE NUMBER STATISTICS --------------->	
+
+
+<!--------------- DIV WITH SELECT OPTION GLOBAL STATS--------------->
+<div class="center">
+<span class="select-option-description">Tabulkové globální statistiky:</span>
+  <select id="select" class="select-option">
+    <option value="0" i="0">
+     SKRÝT TABULKU
+    </option>
+    <option value="1" id="1">
+     Třídy podle počtu entit
+    </option>
+    <option value="2" id="2">
+      Počet užití propert - TOP 100
+    </option>
+	<option value="3" id="3">
+      Počet OutDegree zdrojů - TOP 100
+    </option>
+	<option value="4" id="4">
+      Počet InDegree zdrojů - TOP 100
+    </option>
+	<option value="5" id="5">
+      Počet InDegree Tříd
+    </option>
+	<option value="6" id="6">
+      Entity podle počtu InDegree - TOP 100
+    </option>
+
+  </select>
+  <button onclick="selectFunciton()" type="button" class="button-show">
+    ZOBRAZIT
+  </button>
+
+<!--------------- DIV WITH SELECT OPTION GLOBAL STATS ENDING --------------->
+
+<div class="column-table-select">
+	<h5 class="in-column" id="columnName"></h5>
+		<table id="result" class="select-table"></table>
+</div>
+
+</div>
+</div>
+							
+</div>
+
+
+<script type="text/javascript" src="/js/single-number-stats.js"></script>
+<script type="text/javascript" src="/js/table-statistics.js"></script>
+
+
+
+  </body>
+</html>
