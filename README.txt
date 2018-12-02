@@ -9,7 +9,7 @@
 # 3.1 Output of build command is image, you will see identificator of the image (combination of letter and digits)
 
 # 4 Run the image wit command "docker run -d -p 8080:8080 -p 80:80 IMAGE_IDENTIFICATOR". It is ok to type just 3 char from identificator.
-# 4.1 -p is connection of ports of docker container and host PC (8080 is for LinkedPipes and 80 for web preview of stats)
+# 4.1 -p is connection of ports of docker container and host computer (8080 is for LinkedPipes and 80 for web preview of stats)
 
 # 5 wait a moment, linkedpipes pipeline process is in progress. You can check the progress on localhost:8080. 
 # 5.1 After it is done,  you will see working example of stats vizualization on localhost:80
