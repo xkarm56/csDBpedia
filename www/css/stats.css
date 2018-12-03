@@ -61,7 +61,7 @@ margin:0px 10px 0px 10px;
 .select-table  tr {
   counter-increment: rowNumber;
 }
-.select-table  tr td:first-child::before {
+.select-table  tr td:first-child:before {
   content: counter(rowNumber);
 }
 
@@ -122,4 +122,13 @@ a.in-column-link:hover
 	background-color:#767687;
 	padding:5px 20px 5px 20px;
 	font: 14px/1.1 "Raleway", sans-serif;
+}
+
+.otology
+{
+	width:200px;
+	float:left;
+	margin:20px 0px 20px 0px;
+	padding:10px;
+	text-align:center;
 }

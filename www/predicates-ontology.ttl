@@ -1,0 +1,135 @@
+@prefix : <http://webprotege.stanford.edu/project/CiywUdNP9FexSSfUC7AyJn#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://webprotege.stanford.edu/project/CiywUdNP9FexSSfUC7AyJn> .
+
+<http://webprotege.stanford.edu/project/CiywUdNP9FexSSfUC7AyJn> rdf:type owl:Ontology .
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://webprotege.stanford.edu/R2ICVMqXVdeuSNkwyyWSsp
+<http://webprotege.stanford.edu/R2ICVMqXVdeuSNkwyyWSsp> rdf:type owl:DatatypeProperty ;
+                                                        rdfs:subPropertyOf owl:topDataProperty ;
+                                                        rdfs:domain owl:Thing ;
+                                                        rdfs:range xsd:nonNegativeInteger ;
+                                                        rdfs:comment "number of all properties used as predicate in DBpedia"@en ,
+                                                                     "počet všech propert použitých jako predikát v DBpedii"@cs ;
+                                                        rdfs:label "numberOfPropertiesUsed"@en .
+
+
+###  http://webprotege.stanford.edu/R7Ymp2RlX7O3mKu5xi81Qqm
+<http://webprotege.stanford.edu/R7Ymp2RlX7O3mKu5xi81Qqm> rdf:type owl:DatatypeProperty ;
+                                                         rdfs:subPropertyOf owl:topDataProperty ;
+                                                         rdfs:domain owl:Thing ;
+                                                         rdfs:range xsd:nonNegativeInteger ;
+                                                         rdfs:comment "number of predicates in DBpedia (including properties without rdf:type of rdf:Property)"@en ,
+                                                                      "počet predikátů v DBpedii (včetně propert které nejsou typu rdf:Property)"@cs ;
+                                                         rdfs:label "numberOfPredicates"@en .
+
+
+###  http://webprotege.stanford.edu/R7qWkkwGmKp30pzCZbZ9Kfw
+<http://webprotege.stanford.edu/R7qWkkwGmKp30pzCZbZ9Kfw> rdf:type owl:DatatypeProperty ;
+                                                         rdfs:subPropertyOf owl:topDataProperty ;
+                                                         rdfs:domain owl:Thing ;
+                                                         rdfs:range xsd:nonNegativeInteger ;
+                                                         rdfs:comment "number of unique resource without redirecting"@en ,
+                                                                      "počet zdrojů nepřesměrovaných na jiný zdroj"@cs ;
+                                                         rdfs:label "numberOfUniqeResources"@en .
+
+
+###  http://webprotege.stanford.edu/R9Y9JIYyTa5vGfFv1GZBffS
+<http://webprotege.stanford.edu/R9Y9JIYyTa5vGfFv1GZBffS> rdf:type owl:DatatypeProperty ;
+                                                         rdfs:subPropertyOf owl:topDataProperty ;
+                                                         rdfs:domain owl:Thing ;
+                                                         rdfs:range xsd:nonNegativeInteger ;
+                                                         rdfs:comment "number of all outdegrees in DBpedia (same ourdegrees are counting repeatedly). This number is equal to number of all links (every link is OutDegree link)."@en ,
+                                                                      "počet outdegree odkazů v DBpedii (stejné započítané opakovaně). Číslo je stejné pro počet interních odkazů (každý odkaz je zároveň OutDegree odkaz)"@cs ;
+                                                         rdfs:label "numberOfOutdegree"@en .
+
+
+###  http://webprotege.stanford.edu/RB9C7AuazqpS9pSrr9FoNKk
+<http://webprotege.stanford.edu/RB9C7AuazqpS9pSrr9FoNKk> rdf:type owl:DatatypeProperty ;
+                                                         rdfs:subPropertyOf owl:topDataProperty ;
+                                                         rdfs:domain owl:Thing ;
+                                                         rdfs:range xsd:nonNegativeInteger ;
+                                                         rdfs:comment "number of class in DBpedia with atleast single resource (class entity"@en ,
+                                                                      "počet tříd v DBpedii, které mají alespoň jeden zdroj (entitu třídy)"@cs ;
+                                                         rdfs:label "numberOfClassesWithResource"@en .
+
+
+###  http://webprotege.stanford.edu/RBrpIwREVQ1YL4K2f0X5NOA
+<http://webprotege.stanford.edu/RBrpIwREVQ1YL4K2f0X5NOA> rdf:type owl:DatatypeProperty ;
+                                                         rdfs:subPropertyOf owl:topDataProperty ;
+                                                         rdfs:domain owl:Thing ;
+                                                         rdfs:range xsd:nonNegativeInteger ;
+                                                         rdfs:comment "number of resource in DBpedia with Class type (= Class entity)"@en ,
+                                                                      "počet zdrojů v DBpedii s typem třídy (= entita třídy)"@cs ;
+                                                         rdfs:label "numberOfResourceWithType"@en .
+
+
+###  http://webprotege.stanford.edu/RCesNL9nno5b1QeKJdmQ36p
+<http://webprotege.stanford.edu/RCesNL9nno5b1QeKJdmQ36p> rdf:type owl:DatatypeProperty ;
+                                                         rdfs:subPropertyOf owl:topDataProperty ;
+                                                         rdfs:domain owl:Thing ;
+                                                         rdfs:range xsd:nonNegativeInteger ;
+                                                         rdfs:comment "number of triples in DBpedia"@en ,
+                                                                      "počet trojic v DBpedii"@cs ;
+                                                         rdfs:label "numberOfTriples"@en .
+
+
+###  http://webprotege.stanford.edu/RCs9AigslFMb2VYB3c1XbSq
+<http://webprotege.stanford.edu/RCs9AigslFMb2VYB3c1XbSq> rdf:type owl:DatatypeProperty ;
+                                                         rdfs:subPropertyOf owl:topDataProperty ;
+                                                         rdfs:domain owl:Thing ;
+                                                         rdfs:range xsd:nonNegativeInteger ;
+                                                         rdfs:comment "number of defined properties in DBpedia ontology"@en ,
+                                                                      "počet definovaných propert v ontologii DBpedie"@cs ;
+                                                         rdfs:label "numberOfProperties"@en .
+
+
+###  http://webprotege.stanford.edu/RDfD7AmLqJo5kOYluYaTpE
+<http://webprotege.stanford.edu/RDfD7AmLqJo5kOYluYaTpE> rdf:type owl:DatatypeProperty ;
+                                                        rdfs:subPropertyOf owl:topDataProperty ;
+                                                        rdfs:domain owl:Thing ;
+                                                        rdfs:range xsd:nonNegativeInteger ;
+                                                        rdfs:comment "počet definovaných tříd"@cs ;
+                                                        rdfs:label "number of defined Classes"@en ,
+                                                                   "numberOfClasses"@en .
+
+
+###  http://webprotege.stanford.edu/RN05DIqz61lXoa36tVNM0T
+<http://webprotege.stanford.edu/RN05DIqz61lXoa36tVNM0T> rdf:type owl:DatatypeProperty ;
+                                                        rdfs:subPropertyOf owl:topDataProperty ;
+                                                        rdfs:domain owl:Thing ;
+                                                        rdfs:range xsd:nonNegativeInteger ;
+                                                        rdfs:comment "number of disambiguation pages in DBpedia"@en ,
+                                                                     "počet rozcestníků v DBpedii"@cs ;
+                                                        rdfs:label "numberOfDisambiguates"@en .
+
+
+###  http://webprotege.stanford.edu/RiTSPL2XA7j7203Z2tv6CH
+<http://webprotege.stanford.edu/RiTSPL2XA7j7203Z2tv6CH> rdf:type owl:DatatypeProperty ;
+                                                        rdfs:subPropertyOf owl:topDataProperty ;
+                                                        rdfs:domain owl:Thing ;
+                                                        rdfs:range xsd:nonNegativeInteger ;
+                                                        rdfs:comment "number of redirected resource to another one"@en ,
+                                                                     "počet redirectů - zdrojů přesměrovaných na jiný zdroj"@cs ;
+                                                        rdfs:label "numberOfRedirectedResource"@en .
+
+
+###  http://webprotege.stanford.edu/Rr3wcWhHbo5aX77QWR3EJ4
+<http://webprotege.stanford.edu/Rr3wcWhHbo5aX77QWR3EJ4> rdf:type owl:DatatypeProperty ;
+                                                        rdfs:subPropertyOf owl:topDataProperty ;
+                                                        rdfs:domain owl:Thing ;
+                                                        rdfs:range xsd:nonNegativeInteger ;
+                                                        rdfs:comment "number of all resource in DBpedia (including disambiguation pages and rediretcs)"@en ,
+                                                                     "počet zdrojů v DBpedii (včetně rozcestníků a redirectů)"@cs ;
+                                                        rdfs:label "numberOfResource"@en .
+
+
+###  Generated by the OWL API (version 4.5.6) https://github.com/owlcs/owlapi
